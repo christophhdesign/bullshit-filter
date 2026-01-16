@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bullshit Filter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bullshit Filter</h1>
+      <p class="subtitle">Hide posts containing keywords on selected sites.</p>
+    </header>
+
+    <section class="status">
+      <span id="status-indicator" class="indicator"></span>
+      <span id="status-text">Loading…</span>
+    </section>
+
+    <section class="controls">
+      <button id="activate-btn" class="primary">Activate</button>
+      <button id="deactivate-btn" class="ghost">Deactivate</button>
+    </section>
+
+    <section>
+      <label for="keywords">Keywords (comma or newline separated)</label>
+      <textarea id="keywords" rows="5" placeholder="synergy, hustle, thought leadership"></textarea>
+    </section>
+
+    <section>
+      <label for="sites">Sites to enable on (comma or newline separated)</label>
+      <textarea id="sites" rows="4" placeholder="linkedin.com"></textarea>
+    </section>
+
+    <section class="actions">
+      <button id="save-btn" class="primary">Save Settings</button>
+      <span id="save-status" class="save-status"></span>
+    </section>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
